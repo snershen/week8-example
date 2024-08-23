@@ -1,0 +1,153 @@
+<header class="navbar navbar-expand-lg fixed-top bg-white shadow container">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="../assets/images/logo.png" alt="" width="200" /></a>
+    <button
+      class="navbar-toggler order-1 order-lg-0"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body position-relative d-flex flex-column d-lg-block">
+        <ul class="navbar-nav align-items-lg-center flex-grow-1 pe-3">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              探索<span class="d-inline-block d-lg-none">全部</span>
+            </a>
+            <!-- 選單第一層 -->
+            <ul class="dropdown-menu dropdown-menu-first rounded-0">
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li><a class="dropdown-item" href="#">探索全部</a></li>
+              <li class="dropdown-submenu dropend">
+                <a class="dropdown-item" data-bs-toggle="dropdown" href="#">程式</a>
+                <!-- 選單第二層 -->
+                <ul class="dropdown-menu dropdown-menu-second rounded-0 h-100">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" data-bs-toggle="dropdown" href="#">所有程式</a>
+                    <!-- 選單第三層 -->
+                    <ul class="dropdown-menu dropdown-menu-third rounded-0 h-100">
+                      <li><a class="dropdown-item" href="#">熱門課程</a></li>
+                      <li><a class="dropdown-item" data-bs-toggle="dropdown" href="#">程式</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" data-bs-toggle="dropdown" href="#">程式</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="me-lg-auto">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </li>
+        </ul>
+        <div class="d-lg-none border-top p-3 position-absolute bottom-0 start-0 w-100">
+          <a class="btn btn-primary d-block" href="#">登入 / 註冊</a>
+        </div>
+      </div>
+    </div>
+    <ul class="navbar-nav align-items-lg-center flex-row ms-auto">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item d-none d-lg-block">
+        <a class="btn btn-primary" href="#">登入 / 註冊</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<!-- <header class="navbar navbar-expand-lg fixed-top bg-white shadow container">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="../assets/images/logo.png" alt="" width="200" /></a>
+    <button
+      class="navbar-toggler order-1 order-lg-0"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end align-items-lg-center flex-grow-1 pe-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="me-lg-auto">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="navbar-nav align-items-lg-center flex-row ms-auto">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item d-none d-lg-block">
+        <a class="btn btn-primary" href="#">登入/註冊</a>
+      </li>
+    </ul>
+  </div>
+</header> -->

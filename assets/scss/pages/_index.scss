@@ -1,0 +1,14 @@
+.pay {
+  .alert {
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.5s;
+  }
+  input:checked ~ .alert {
+    height: auto;
+    padding: 16px;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,102 @@
+header {
+  &.navbar {
+    @include media-breakpoint-up(sm) {
+      border-radius: 100px;
+    }
+  }
+  .form-control {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include media-breakpoint-up(xl) {
+      width: 425px;
+    }
+  }
+  .dropdown-item {
+    padding: 12px;
+    padding-left: 24px;
+    border-radius: 12px;
+    font-size: 1rem;
+    &:not(.dropdown-item-all) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &::after {
+        content: "\e5e1";
+        font-family: "Material Symbols Outlined";
+        color: $neutral-300;
+        font-size: 0.75rem;
+      }
+      &.active,
+      &:hover {
+        background: $primary;
+        color: $white;
+        font-weight: bold;
+        &::after {
+          color: $white;
+        }
+      }
+    }
+   
+  }
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "\e313";
+      font-family: "Material Symbols Outlined";
+      border: none;
+      color: $neutral-300;
+    }
+  }
+}
+
+.desktop-nav-dropdown-menu {
+  top: 100%;
+  left: 10%;
+  // transform: translateX(-50%);
+  max-width: 863px;
+  &[data-bs-popper] {
+    // left: 50%;
+    left: 20%;
+    // transform: translateX(-50%);
+  }
+
+  .dropdown-menu {
+    &-level-one,
+    &-level-two,
+    &-level-three {
+      height: 600px;
+      max-height: calc(100vh - 200px);
+      overflow-y: auto;
+    }
+    &-level-one,
+    &-level-two {
+      max-width: 232px;
+      width: 26vw;
+      padding: 12px 12px 4px;
+    }
+    &-level-three {
+      max-width: 399px;
+      width: 48vw;
+      padding: 12px 24px 4px;
+    }
+
+    &-level-two,
+    &-level-three {
+      // display: none;
+    }
+  }
+}
+
+.mobile-nav-dropdown-menu {
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  .dropdown-menu-level-two{
+    padding: 16px 24px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
